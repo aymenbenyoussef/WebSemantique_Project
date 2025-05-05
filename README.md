@@ -16,3 +16,7 @@ Ce projet vise à modéliser le domaine des équipes sportives à l’aide des t
 - `RDF.rdf` — Données RDF correspondant à l'ontologie
 - `SPARQL.txt` — Fichier contenant des requêtes SPARQL prêtes à l’emploi
 - `SWRL.txt` - Fichier contenant des requêtes SWRL
+
+## 👥 Contributors
+-Mohamed Ali Kechrida  https://github.com/medalikech
+-Aymen Ben Youssef   https://github.com/aymenbenyoussef
