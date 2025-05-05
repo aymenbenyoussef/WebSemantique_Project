@@ -1,0 +1,38 @@
+PREFIX : <http://www.semanticweb.org/user/ontologies/2025/3/sport_team#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+
+# Afficher tous les joueurs de l'equipe Barcelone
+SELECT ?player 
+WHERE {
+  ?player a :Player .
+  ?player :playsFor :Barcelone .
+}
+
+# Afficher Les equipes participé en Champions League
+Select ?team
+WHERE {
+  ?team a :Team .
+   ?team :participatesIn :Champions_League ;
+  
+}
+
+
+# Afficher les joueurs qui ont entrainé sous Zinedine Zidane
+SELECT ?player
+WHERE {
+  ?player a :Player .
+  ?player :playsFor ?team .
+   ?team :coachedBy :Zinedine_Zidane 
+}
+
+# Afficher les joueurs qui ont marqué plus de 300 buts et 100 assists trier en ordre decroissant par nombre des assists fait
+SELECT ?player ?goals ?assists
+WHERE {
+  ?player a :Player .
+  ?player :ScoredGoals ?goals .
+  ?player :AssistedGoals ?assists.
+  FILTER (?goals > 300 && ?assists > 100)
+}
+order by DESC(?assists)
