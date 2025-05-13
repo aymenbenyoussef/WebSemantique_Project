@@ -1,0 +1,616 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/user/ontologies/2025/3/sport_team"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/user/ontologies/2025/3/sport_team">
+    <Prefix name="" IRI="http://www.semanticweb.org/user/ontologies/2025/3/sport_team/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="swrl" IRI="http://www.w3.org/2003/11/swrl#"/>
+    <Prefix name="swrla" IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"/>
+    <Prefix name="swrlb" IRI="http://www.w3.org/2003/11/swrlb#"/>
+    <Prefix name="sport_team" IRI="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#"/>
+    <Declaration>
+        <Class IRI="#Coach"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Competition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ImportantMatch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Match"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Player"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#QualifiedCoach"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Season"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stadium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Team"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Topassister"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Topscorer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#coachedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#coaches"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMatch"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPlayer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#participatesIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#playedAt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#playedAtSeason"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#playedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#playsFor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#AssistedGoals"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#PlayedOn"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ScoredGoals"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Barcelone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Camp_Nou"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Champions_League"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cristiano_Ronaldo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#El_Classico"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Karim_Benzema"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lionel_Messi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Luis_Suarez"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pep_Guardiola"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Real_Madrid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Santiago_Bernabéu"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Zinedine_Zidane"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2017/2018"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2018/2017"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2019/2020"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#ImportantMatch"/>
+        <Class IRI="#Match"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#QualifiedCoach"/>
+        <Class IRI="#Coach"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Topassister"/>
+        <Class IRI="#Player"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Topscorer"/>
+        <Class IRI="#Player"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Team"/>
+        <NamedIndividual IRI="#Barcelone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Stadium"/>
+        <NamedIndividual IRI="#Camp_Nou"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Competition"/>
+        <NamedIndividual IRI="#Champions_League"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ImportantMatch"/>
+        <NamedIndividual IRI="#Champions_League"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Match"/>
+        <NamedIndividual IRI="#Champions_League"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Player"/>
+        <NamedIndividual IRI="#Cristiano_Ronaldo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Topscorer"/>
+        <NamedIndividual IRI="#Cristiano_Ronaldo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Match"/>
+        <NamedIndividual IRI="#El_Classico"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Player"/>
+        <NamedIndividual IRI="#Karim_Benzema"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Player"/>
+        <NamedIndividual IRI="#Lionel_Messi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Topscorer"/>
+        <NamedIndividual IRI="#Lionel_Messi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Player"/>
+        <NamedIndividual IRI="#Luis_Suarez"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Coach"/>
+        <NamedIndividual IRI="#Pep_Guardiola"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#QualifiedCoach"/>
+        <NamedIndividual IRI="#Pep_Guardiola"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Team"/>
+        <NamedIndividual IRI="#Real_Madrid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Stadium"/>
+        <NamedIndividual IRI="#Santiago_Bernabéu"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Coach"/>
+        <NamedIndividual IRI="#Zinedine_Zidane"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#QualifiedCoach"/>
+        <NamedIndividual IRI="#Zinedine_Zidane"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Season"/>
+        <NamedIndividual IRI="#2017/2018"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Season"/>
+        <NamedIndividual IRI="#2018/2017"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Season"/>
+        <NamedIndividual IRI="#2019/2020"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#coachedBy"/>
+        <NamedIndividual IRI="#Barcelone"/>
+        <NamedIndividual IRI="#Pep_Guardiola"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPlayer"/>
+        <NamedIndividual IRI="#Barcelone"/>
+        <NamedIndividual IRI="#Lionel_Messi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPlayer"/>
+        <NamedIndividual IRI="#Barcelone"/>
+        <NamedIndividual IRI="#Luis_Suarez"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#participatesIn"/>
+        <NamedIndividual IRI="#Barcelone"/>
+        <NamedIndividual IRI="#Champions_League"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMatch"/>
+        <NamedIndividual IRI="#Champions_League"/>
+        <NamedIndividual IRI="#El_Classico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#playedIn"/>
+        <NamedIndividual IRI="#Champions_League"/>
+        <NamedIndividual IRI="#Champions_League"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#playsFor"/>
+        <NamedIndividual IRI="#Cristiano_Ronaldo"/>
+        <NamedIndividual IRI="#Real_Madrid"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#playedAt"/>
+        <NamedIndividual IRI="#El_Classico"/>
+        <NamedIndividual IRI="#Camp_Nou"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#playsFor"/>
+        <NamedIndividual IRI="#Karim_Benzema"/>
+        <NamedIndividual IRI="#Real_Madrid"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#playsFor"/>
+        <NamedIndividual IRI="#Lionel_Messi"/>
+        <NamedIndividual IRI="#Barcelone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#playsFor"/>
+        <NamedIndividual IRI="#Luis_Suarez"/>
+        <NamedIndividual IRI="#Barcelone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#coaches"/>
+        <NamedIndividual IRI="#Pep_Guardiola"/>
+        <NamedIndividual IRI="#Barcelone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#coachedBy"/>
+        <NamedIndividual IRI="#Real_Madrid"/>
+        <NamedIndividual IRI="#Zinedine_Zidane"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPlayer"/>
+        <NamedIndividual IRI="#Real_Madrid"/>
+        <NamedIndividual IRI="#Cristiano_Ronaldo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPlayer"/>
+        <NamedIndividual IRI="#Real_Madrid"/>
+        <NamedIndividual IRI="#Karim_Benzema"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#participatesIn"/>
+        <NamedIndividual IRI="#Real_Madrid"/>
+        <NamedIndividual IRI="#Champions_League"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#coaches"/>
+        <NamedIndividual IRI="#Zinedine_Zidane"/>
+        <NamedIndividual IRI="#Real_Madrid"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#AssistedGoals"/>
+        <NamedIndividual IRI="#Cristiano_Ronaldo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">122</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ScoredGoals"/>
+        <NamedIndividual IRI="#Cristiano_Ronaldo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">700</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#PlayedOn"/>
+        <NamedIndividual IRI="#El_Classico"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2017-04-10T20:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#AssistedGoals"/>
+        <NamedIndividual IRI="#Karim_Benzema"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ScoredGoals"/>
+        <NamedIndividual IRI="#Karim_Benzema"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">250</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#AssistedGoals"/>
+        <NamedIndividual IRI="#Lionel_Messi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">350</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ScoredGoals"/>
+        <NamedIndividual IRI="#Lionel_Messi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">650</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#AssistedGoals"/>
+        <NamedIndividual IRI="#Luis_Suarez"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">165</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ScoredGoals"/>
+        <NamedIndividual IRI="#Luis_Suarez"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">289</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#playedAtSeason"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#coachedBy"/>
+        <ObjectProperty IRI="#coaches"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasPlayer"/>
+        <ObjectProperty IRI="#playsFor"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#coachedBy"/>
+        <Class IRI="#Team"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#coaches"/>
+        <Class IRI="#Coach"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMatch"/>
+        <Class IRI="#Competition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPlayer"/>
+        <Class IRI="#Team"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#participatesIn"/>
+        <Class IRI="#Team"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#playedAt"/>
+        <Class IRI="#Match"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#playedAtSeason"/>
+        <Class IRI="#Match"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#playedIn"/>
+        <Class IRI="#Match"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#playsFor"/>
+        <Class IRI="#Player"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#coachedBy"/>
+        <Class IRI="#Coach"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#coaches"/>
+        <Class IRI="#Team"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMatch"/>
+        <Class IRI="#Match"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPlayer"/>
+        <Class IRI="#Player"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#participatesIn"/>
+        <Class IRI="#Competition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#playedAt"/>
+        <Class IRI="#Stadium"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#playedAtSeason"/>
+        <Class IRI="#Season"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#playedIn"/>
+        <Class IRI="#Competition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#playsFor"/>
+        <Class IRI="#Team"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#AssistedGoals"/>
+        <Class IRI="#Player"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#PlayedOn"/>
+        <Class IRI="#Match"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ScoredGoals"/>
+        <Class IRI="#Player"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#AssistedGoals"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#PlayedOn"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ScoredGoals"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>R4</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Coach"/>
+                <Variable IRI="/c"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#coaches"/>
+                <Variable IRI="/c"/>
+                <Variable IRI="/t"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#participatesIn"/>
+                <Variable IRI="/t"/>
+                <NamedIndividual IRI="#Champions_League"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#QualifiedCoach"/>
+                <Variable IRI="/c"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>R3</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Match"/>
+                <Variable IRI="/m"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#playedIn"/>
+                <Variable IRI="/m"/>
+                <NamedIndividual IRI="#Champions_League"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#ImportantMatch"/>
+                <Variable IRI="/m"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>R2</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Player"/>
+                <Variable IRI="/p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#AssistedGoals"/>
+                <Variable IRI="/p"/>
+                <Variable IRI="/g"/>
+            </DataPropertyAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:greaterThan">
+                <Variable IRI="/g"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">200</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Topassister"/>
+                <Variable IRI="/p"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>R1</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Player"/>
+                <Variable IRI="/p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#ScoredGoals"/>
+                <Variable IRI="/p"/>
+                <Variable IRI="/g"/>
+            </DataPropertyAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:greaterThan">
+                <Variable IRI="/g"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">300</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Topscorer"/>
+                <Variable IRI="/p"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

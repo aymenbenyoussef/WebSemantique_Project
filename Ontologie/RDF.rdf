@@ -1,0 +1,684 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/user/ontologies/2025/3/sport_team/"
+     xml:base="http://www.semanticweb.org/user/ontologies/2025/3/sport_team/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:sport_team="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/sport_team"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/sport_team#coachedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#coachedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#coaches"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Team"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Coach"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/sport_team#coaches -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#coaches">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Coach"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Team"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/sport_team#hasMatch -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#hasMatch">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Competition"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Match"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/sport_team#hasPlayer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#hasPlayer">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#playsFor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Team"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Player"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/sport_team#participatesIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#participatesIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Team"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Competition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/sport_team#playedAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#playedAt">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Match"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Stadium"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/sport_team#playedAtSeason -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#playedAtSeason">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Match"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Season"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/sport_team#playedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#playedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Match"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Competition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/sport_team#playsFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#playsFor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Player"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Team"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/sport_team#AssistedGoals -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#AssistedGoals">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Player"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/sport_team#PlayedOn -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#PlayedOn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Match"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/sport_team#ScoredGoals -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#ScoredGoals">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Player"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Coach -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Coach"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Competition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Competition"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/sport_team#ImportantMatch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#ImportantMatch">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Match"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Match -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Match"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Player -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Player"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/sport_team#QualifiedCoach -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#QualifiedCoach">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Coach"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Season -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Season"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Stadium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Stadium"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Team -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Team"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Topassister -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Topassister">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Player"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Topscorer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Topscorer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Player"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Barcelone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Barcelone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Team"/>
+        <sport_team:coachedBy rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Pep_Guardiola"/>
+        <sport_team:hasPlayer rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Lionel_Messi"/>
+        <sport_team:hasPlayer rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Luis_Suarez"/>
+        <sport_team:participatesIn rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Champions_League"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Camp_Nou -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Camp_Nou">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Stadium"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Champions_League -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Champions_League">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Competition"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#ImportantMatch"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Match"/>
+        <sport_team:hasMatch rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#El_Classico"/>
+        <sport_team:playedIn rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Champions_League"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Cristiano_Ronaldo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Cristiano_Ronaldo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Player"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Topscorer"/>
+        <sport_team:playsFor rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Real_Madrid"/>
+        <sport_team:AssistedGoals rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">122</sport_team:AssistedGoals>
+        <sport_team:ScoredGoals rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">700</sport_team:ScoredGoals>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/sport_team#El_Classico -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#El_Classico">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Match"/>
+        <sport_team:playedAt rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Camp_Nou"/>
+        <sport_team:PlayedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-04-10T20:00:00</sport_team:PlayedOn>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Karim_Benzema -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Karim_Benzema">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Player"/>
+        <sport_team:playsFor rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Real_Madrid"/>
+        <sport_team:AssistedGoals rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">50</sport_team:AssistedGoals>
+        <sport_team:ScoredGoals rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">250</sport_team:ScoredGoals>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Lionel_Messi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Lionel_Messi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Player"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Topscorer"/>
+        <sport_team:playsFor rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Barcelone"/>
+        <sport_team:AssistedGoals rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">350</sport_team:AssistedGoals>
+        <sport_team:ScoredGoals rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">650</sport_team:ScoredGoals>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Luis_Suarez -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Luis_Suarez">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Player"/>
+        <sport_team:playsFor rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Barcelone"/>
+        <sport_team:AssistedGoals rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">165</sport_team:AssistedGoals>
+        <sport_team:ScoredGoals rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">289</sport_team:ScoredGoals>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Pep_Guardiola -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Pep_Guardiola">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Coach"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#QualifiedCoach"/>
+        <sport_team:coaches rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Barcelone"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Real_Madrid -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Real_Madrid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Team"/>
+        <sport_team:coachedBy rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Zinedine_Zidane"/>
+        <sport_team:hasPlayer rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Cristiano_Ronaldo"/>
+        <sport_team:hasPlayer rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Karim_Benzema"/>
+        <sport_team:participatesIn rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Champions_League"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Santiago_Bernabéu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Santiago_Bernabéu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Stadium"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Zinedine_Zidane -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Zinedine_Zidane">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Coach"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#QualifiedCoach"/>
+        <sport_team:coaches rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Real_Madrid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/sport_team#2017/2018 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#2017/2018">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Season"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/sport_team#2018/2017 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#2018/2017">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Season"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/sport_team#2019/2020 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#2019/2020">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Season"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/sport_team/c">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/sport_team/t">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/sport_team/m">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/sport_team/p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/sport_team/g">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>R4</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Coach"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#coaches"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team/c"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team/t"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#participatesIn"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team/t"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Champions_League"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#QualifiedCoach"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>R3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Match"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team/m"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#playedIn"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team/m"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Champions_League"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#ImportantMatch"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team/m"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>R2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Player"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#AssistedGoals"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team/p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team/g"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team/g"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Topassister"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>R1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Player"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#ScoredGoals"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team/p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team/g"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team/g"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team#Topscorer"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/sport_team/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
